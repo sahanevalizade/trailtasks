@@ -1,2 +1,2 @@
-metin = "AALSA Trail"
+metn = "AALSA Trail"
 print(metin [0:5])
