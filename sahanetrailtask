@@ -1,5 +1,0 @@
-# ad, soyad ve yas deyiskenleri teyin edirik
-ad = "shahane"
-soyad = "valizade"
-yas = 19
-print(f"salam, menim adim {ad}, soyadim {soyad}, yasim {yas} du")
