@@ -1,0 +1,7 @@
+eded = -5 
+if eded > 0:
+    print("eded musbetdir")
+elif eded < 0:
+    print("eded menfidir")
+else:
+    print("eded sifirdir")
