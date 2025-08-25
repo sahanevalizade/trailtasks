@@ -36,7 +36,6 @@ class BankHesabi:
         return "Minimum balans 10 AZN olmalidir. Kredit yalniz 18 yasdan yuxari sexslere verilir."
 
 # Istifade 
-print(5)
 hesab1 = BankHesabi("Ruhiyyə", 200)
 hesab2 = BankHesabi("Elvin")
 print(hesab1)

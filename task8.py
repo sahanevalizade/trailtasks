@@ -1,33 +1,31 @@
+from flask import Flask
+app = Flask(__name__)
 
-import unittest
+@app.route('/')
 
-class Testcalculator(unittest.TestCase):
-    def test_add(self):
-        calc = Calculator()
-        self.assertEqual(calc.add(2, 3), 5)
-        self.assertEqual(calc.add(-1, 1), 0)
+def ana_sehife():
+    return """
+    <html>
+        <head>
+            <title>Salam, Menim sehifeme xos geldiniz!</title>
+                </head>
+                    <body>
+                <h1>Salam, menim sehifeme xos geldiniz!</h1>
+                <p>Burada sizinle melumatlar paylasacagim</p>
+            <p>Bu gun hava cox gozeldir</p>
+            <ul>
+                <li>Bu gun hava 25 derecedir</li>
+                <li>Hava guneslidir</li>
+                <li>Hava buludsuzdur</li>
+                <li>Hava yagisli deyil</li>
+            </ul>
+        </body>
+    </html>
+    """
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=1454)
 
 
-    def  test_subtract(self):
-        clac = Calculator()
-        self.assertEqual(calc.subtract(5, 3), 2)
-        self.assertEqual(calc.subtract(3, 5), -5)
-
-
-    def test_multiply(self):
-        calc = Calculator()
-        self.assertEqual(calc.mutiply(4, 3), 12)
-        self.assertEqual(calc.multiply(-1, 3), -3)
-
-
-    def test_divide(self):
-        clac = Calculator()
-        self.assertEqual(calc.divide(10, 2), 5)
-        self.assertEqual(calc.divide(5, 2), 2.5)
-    
-
-    with self.assertRaises(ValueError):
-        calc.divide(5, 0)  # sifira bolme sehvi
 
 
 
