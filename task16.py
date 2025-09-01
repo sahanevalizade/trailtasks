@@ -10,10 +10,21 @@ app = Flask(__name__)
 
 @app.route('/')
 def start():
-    return '<h2>KODY.AZ</h2>'
+    return '''
+    <h2>KODY.AZ & FLASK</h2>
+    <a href='/about'>About page</a>
+    '''
 
 
-app.run(host='localhost', port=5151, debug=True)
+@app.route('/about')
+def about():
+    return '''
+    <h2>About page</h2>
+    <a href='/'>Main page</a>
+    '''
+
+
+
 
 
 if __name__ == "__main__":
