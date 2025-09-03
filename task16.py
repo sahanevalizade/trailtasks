@@ -18,7 +18,7 @@ def start():
 
 @app.route('/about')
 def about():
-    return '''
+    return '''                                      
     <h2>About page</h2>
     <a href='/'>Main page</a>
     '''
@@ -28,4 +28,4 @@ def about():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True)                                                                                                                                                                                                                                                               
